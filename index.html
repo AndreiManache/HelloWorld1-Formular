@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formular</title>
+    <title>DOM</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
-<body>
 
+<body>
+    <div>
+        <p class="alert">Thank you for contacting us, X</p>
+    </div>
+
+    <div class="wrapper">
+        <div class="textInput">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="gender">
+            <p>Gender</p><br>
+            <input type="radio" name="gender" value="male"> M <br>
+            <input type="radio" name="gender" value="female"> F <br>
+        </div>
+        <div class="text">
+            <textarea name="message" class="textArea" cols="30" rows="10" placeholder="Your message here..."></textarea>
+        </div>
+        <input type="submit" value="Submit" onclick="showMessage()">
+    </div>
+    
 <script src="script.js"></script>
 </body>
- 
+
 </html>

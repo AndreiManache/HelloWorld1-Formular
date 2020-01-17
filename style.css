@@ -1,0 +1,11 @@
+.alert {
+    border: 1px solid green;
+    border-bottom: 1em;
+    background-color: green;
+    opacity: 60%;
+    display: none;
+}
+
+.wrapper {
+    border: 1px solid black;
+}
