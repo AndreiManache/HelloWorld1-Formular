@@ -3,7 +3,14 @@
     border-bottom: 1em;
     background-color: green;
     opacity: 60%;
-    display: none;
+    visibility: hidden;
+    }
+    
+.redBorder {
+    border: 1px solid red;
+}
+.showMessage{
+    visibility: visible;
 }
 
 .wrapper {

@@ -1,14 +1,14 @@
 
+var alert = document.querySelector(".alert");
+var names = document.querySelectorAll(".validate").value;
+var button = document.querySelector(".button");
 
-function load(){
-    alert= document.querySelector(".alert");
-    console.log(alert);
-}
+button.addEventListener('click',function showMessage(){
 
-
-function showMessage(){
-    
+    if(names === ""){
+       names.classList.add('redBorder'); 
+    }
    
-    alert.classList.remove('display');
     
-}
+    
+})
