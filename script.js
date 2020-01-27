@@ -7,7 +7,9 @@ function validare(e){
 
     var nume1 = document.querySelector(".nameBox1").value;
     var nume = document.querySelector(".nameBox").value;
+    var text = document.querySelector(".textArea").value;
     var mesaj = document.querySelector(".message");
+
     
     if(nume1.length<3){
             document.querySelector(".nameBox1").classList.add("invalid");
@@ -25,8 +27,12 @@ function validare(e){
 
             mesaj.innerText = 'Thank you for contacting us,'+" "+nume1+" "+ nume+"!";
             mesaj.classList.remove("hideMessage");
+            console.log(nume1);
+            console.log(nume);
+            console.log(text);
+        }
         
-    }
+
 
 }
 
