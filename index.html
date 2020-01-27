@@ -4,33 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM</title>
+    <title>Formular</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
-
 <body>
-    <div>
-        <p class="alert">Thank you for contacting us, X</p>
-    </div>
-
-    <div class="wrapper">
-        <div class="textInput">
-            <input class="validate" type="text" placeholder="First Name">
-            <input class="validate" type="text" placeholder="Last Name">
-        </div>
-        <div class="gender">
-            <p>Gender</p><br>
-            <input type="radio" name="gender" value="male"> M <br>
-            <input type="radio" name="gender" value="female"> F <br>
-        </div>
-        <div class="text">
-            <textarea name="message" class="textArea" cols="30" rows="10" placeholder="Your message here..."></textarea>
-        </div>
-        <button type="submit" class="button">Submit</button>
-    </div>
     
-<script src="script.js"></script>
-</body>
+    <div class="wrapper">
+        <p class="message hideMessage"></p>
+        <div class="container">
+        <form onsubmit="validare(event);" class="form">
+            <input type="text" class="nameBox1" placeholder="First Name">
+            <input type="text" class="nameBox" placeholder="Last Name">
+            Gender<br>
+            <input  type="radio" name="gender" value="male"> Male<br>
+            <input  type="radio" name="gender" value="female"> Female<br>
 
+            <textarea class="textArea" cols="22" rows="5" placeholder="Your message here..."></textarea><br>
+            <input type="submit" class="buttonSubmit"><br>
+        </form>
+        <img src="hot-air-balloon.jpg" alt="imagine" class="imagine">
+        </div>       
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,18 +1,74 @@
-.alert {
-    border: 1px solid green;
-    border-bottom: 1em;
-    background-color: green;
-    opacity: 60%;
-    visibility: hidden;
-    }
-    
-.redBorder {
-    border: 1px solid red;
+html{
+    height: 100%;   
 }
-.showMessage{
-    visibility: visible;
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+      
 }
 
-.wrapper {
-    border: 1px solid black;
+.container{
+    border : 1px solid black;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    position: absolute; 
+    top: 10%;
+}
+
+.form{
+    width: 150px;
+    height: 150px;
+    margin-left: 4em;
+    margin-top: 2em;
+}
+
+.imagine {
+    width:180px;
+    height: 250px;
+    place-self: center;
+}
+.nameBox{
+    margin: 3px;
+    margin-bottom: 5px;
+}
+.nameBox1{
+    margin: 3px;
+}
+
+.wrapper{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 30%;
+    top: 23%;
+}
+
+.message{
+    color: green;
+    background-color: rgb(182, 230, 182);
+    margin-top: 10px;
+    padding: 5px;
+}
+.hideMessage{
+    visibility: hidden;
+}
+
+
+.invalid{
+    border: 1px solid red;
+}
+
+.buttonSubmit{
+    margin-left: 9em;
+    background-color: rgb(54, 173, 202);
+    color:white;
+    border: none;
+    padding: 5px;
+}
+
+.textArea{
+    margin-top: 5px;
 }
